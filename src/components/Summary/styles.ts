@@ -19,6 +19,7 @@ export const Container = styled.div`
     }
 
     strong {
+      /*Needs display block cause it's an inline element, then margin top wont work*/
       display: block;
       margin-top: 1rem;
       font-size: 2rem;
