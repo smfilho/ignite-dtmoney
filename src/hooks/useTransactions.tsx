@@ -16,7 +16,7 @@ interface Transaction {
   createdAt: string;
 }
 
-// TypesScript has 2 ways of creating the TrasactionInput: Using Omit
+// TypesScript has 2 ways of creating the TransactionInput: Using Omit
 // or using Pick(opposites). Below Omit is been currently used, pick would do the same though.
 // type TransactionInput = Pick<Transaction, 'title' | 'amount' | 'type' | 'category'>;
 
@@ -41,7 +41,7 @@ export function TransactionsProvider({ children }: TransactionsProviderProps) {
   useEffect(() => {
     api
       .get('transactions')
-      .then((response) => setTransactions(response.data.transactions));
+      .then(response => setTransactions(response.data.transactions));
   }, []);
 
   async function createTransaction(transactionInput: TransactionInput) {
