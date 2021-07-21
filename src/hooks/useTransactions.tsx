@@ -23,7 +23,7 @@ interface Transaction {
 type TransactionInput = Omit<Transaction, 'id' | 'createdAt'>;
 
 interface TransactionsProviderProps {
-  children: ReactNode;
+  children: ReactNode; // Component receives data from app.tsx(other components - CHILDREN), use ReactNode in order to type 'em all
 }
 
 interface TransactionsContextData {
