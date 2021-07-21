@@ -61,14 +61,14 @@ export function NewTransactionModal({
         <input
           placeholder='Title'
           value={title}
-          onChange={(event) => setTitle(event.target.value)}
+          onChange={event => setTitle(event.target.value)}
         />
 
         <input
           placeholder='Amount'
           type='number'
           value={amount}
-          onChange={(event) => setAmount(Number(event.target.value))}
+          onChange={event => setAmount(Number(event.target.value))}
         />
 
         <TransactionTypeContainer>
@@ -100,7 +100,7 @@ export function NewTransactionModal({
         <input
           placeholder='Category'
           value={category}
-          onChange={(event) => setCategory(event.target.value)}
+          onChange={event => setCategory(event.target.value)}
         />
 
         <button type='submit'>Submit</button>

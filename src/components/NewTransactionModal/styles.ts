@@ -71,7 +71,7 @@ export const RadioBox = styled.button<RadioBoxProps>`
   border: 1px solid #d7d7d7;
   border-radius: 0.25rem;
 
-  background: ${(props) =>
+  background: ${props =>
     props.isActive
       ? transparentize(0.9, colors[props.activeColor])
       : 'transparent'};
@@ -84,6 +84,8 @@ export const RadioBox = styled.button<RadioBoxProps>`
 
   &:hover {
     border-color: ${darken(0.1, '#d7d7d7')};
+    // Using polished lib above to darken the border only
+    // instead of assigning a darker color to the border
   }
 
   img {

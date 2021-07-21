@@ -6,9 +6,10 @@ import { NewTransactionModal } from './components/NewTransactionModal';
 import { GlobalStyle } from './styles/global';
 import { TransactionsProvider } from './hooks/useTransactions';
 
-Modal.setAppElement('#root'); /*For accessibility reasons*/
+Modal.setAppElement('#root'); /* Included for accessibility reasons*/
 
 export function App() {
+  /*Lifted state to pass them to the Header and NewTransactionModal Components*/
   const [isNewTransactionModalOpen, setIsNewTransactionModalOpen] =
     useState(false);
 
@@ -19,6 +20,7 @@ export function App() {
   function handleCloseNewTransactionModal() {
     setIsNewTransactionModalOpen(false);
   }
+  /****************************************************************************/
 
   return (
     <TransactionsProvider>
