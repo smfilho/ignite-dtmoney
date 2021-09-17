@@ -27,7 +27,7 @@ export const Container = styled.div`
       line-height: 3rem;
     }
 
-    &.img-background {
+    &.background-color {
       background: var(--green);
       color: #fff;
     }
