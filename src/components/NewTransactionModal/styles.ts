@@ -84,8 +84,7 @@ export const RadioBox = styled.button<RadioBoxProps>`
 
   &:hover {
     border-color: ${darken(0.1, '#d7d7d7')};
-    /* Cannot use filter to darken only the button border, so polished 
-      lib was used to reach that effect, instead of assigning a darker color to the border */
+    /* Cannot use filter to darken only the button border, so polished lib was used to reach that effect, instead of assigning a darker color to the border */
   }
 
   img {
